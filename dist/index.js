@@ -54,7 +54,34 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
+	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"css/styles.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ConstructBoard_Uno = _react2.default.createClass({
+		displayName: 'ConstructBoard_Uno',
+
+		render: function render() {
+			return _react2.default.createElement(
+				'table',
+				null,
+				_react2.default.createElement(
+					'tr',
+					null,
+					_react2.default.createElement('td', null),
+					_react2.default.createElement('td', null),
+					_react2.default.createElement('td', null)
+				),
+				_react2.default.createElement(
+					'tr',
+					null,
+					_react2.default.createElement('td', null),
+					_react2.default.createElement('td', null),
+					_react2.default.createElement('td', null)
+				)
+			);
+		}
+	});
 
 	var HelloComponent = _react2.default.createClass({
 		displayName: 'HelloComponent',
@@ -63,7 +90,7 @@
 			return _react2.default.createElement(
 				'div',
 				null,
-				'Battleship'
+				_react2.default.createElement(ConstructBoard_Uno, null)
 			);
 		}
 	});

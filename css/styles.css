@@ -1,0 +1,13 @@
+table{
+	width: 400px;
+	height: 100px;
+}
+td {
+
+	background-color: gray;
+}
+
+.change{
+
+	background-color:red;
+}
